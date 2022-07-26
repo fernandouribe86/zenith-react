@@ -31,6 +31,13 @@
   word-wrap: break-word;
 }
 
+.list-item-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .details{
   display: flex;
   flex-direction: row;
@@ -52,7 +59,8 @@
   font-size: 12px;
   -webkit-text-stroke: 0px;
   color: var(--zgold);
-  margin-right: 20px;
+  margin-right: 0;
+  font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
 }
 
 .list-item:hover, .list-item:focus{

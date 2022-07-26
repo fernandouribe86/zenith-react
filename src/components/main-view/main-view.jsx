@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import { NavbarView } from "../navbar-view/navbar-view";
+import { FooterView } from "../footer-view/footer-view";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -24,23 +25,87 @@ class MainView extends React.Component {
               <li className="list-item">
                 <div className="details">
                   <div className="year">2022</div>
+                  <div className="divider"></div>
                   <div className="list-item-name">portfolio</div>
                 </div>
                 </li>
-              <li className="list-item">about<br />fernando</li>
-              <li className="list-item">technologies<br />& languages
-              </li>
-              <li className="list-item">meet PWA</li>
-              <li className="list-item">pokedex</li>
-              <li className="list-item">myFlix React</li>
-              <li className="list-item">React-Native<br />Chat App</li>
-              <li className="list-item">myFlix<br />Angular</li>
-              <li className="list-item">zenith<br />consulting</li>
-              <li className="list-item">amaca.tech</li>
-              <li className="list-item">design<br />portfolio</li>
+              <li className="list-item">about</li>
+              
+              {/* Meet App */}
+              <li className="list-item">
+                <div className="details">
+                  <div className="year">2022</div>
+                  <div className="divider"></div>
+                  <div className="list-item-name">meet PWA</div>
+                </div>
+                </li>
+
+              {/* Pokedex */}
+                <li className="list-item">
+                <div className="details">
+                  <div className="year">2022</div>
+                  <div className="divider"></div>
+                  <div className="list-item-name">Pokedex</div>
+                </div>
+                </li>
+
+                {/* myFlix React */}
+                <li className="list-item">
+                <div className="details">
+                  <div className="year">2022</div>
+                  <div className="divider"></div>
+                  <div className="list-item-name">myFlix<br/>React</div>
+                </div>
+                </li>
+                
+                {/* Chat App */}
+                <li className="list-item">
+                <div className="details">
+                  <div className="year">2022</div>
+                  <div className="divider"></div>
+                  <div className="list-item-name">React-Native<br/>Chat App</div>
+                </div>
+                </li>
+
+                 {/* MyFlix Angular */}
+                 <li className="list-item">
+                    <div className="details">
+                      <div className="year">2022</div>
+                      <div className="divider"></div>
+                      <div className="list-item-name">myFlix<br/>Angular</div>
+                    </div>
+                </li>
+
+                {/* Zenith Consulting */}
+                <li className="list-item">
+                    <div className="details">
+                      <div className="year">2022</div>
+                      <div className="divider"></div>
+                      <div className="list-item-name">Zenith</div>
+                    </div>
+                </li>
+
+                {/* Amaca.tech */}
+                <li className="list-item">
+                    <div className="details">
+                      <div className="year">2022</div>
+                      <div className="divider"></div>
+                      <div className="list-item-name">Amaca</div>
+                    </div>
+                </li>
+
+                {/* Design Portfolio */}
+                <li className="list-item">
+                    <div className="details">
+                      <div className="year">2022</div>
+                      <div className="divider"></div>
+                      <div className="list-item-name">Design</div>
+                    </div>
+                </li>
             </ul>
           </div>
         </Col>
+        <FooterView />
         </Container>
           )
       }
