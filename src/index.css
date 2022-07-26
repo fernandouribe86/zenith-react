@@ -1,13 +1,81 @@
+:root{
+	--primary-color: #357b70;
+	--secondary-color: #e0b354;
+	--dark-grey: #2b2b2b;
+	--light-grey: #d3d3d3;
+	--zred: #FF6508;
+	--zgold: #B83D00;
+	--zblack: #000202;
+	--zlunar: #FFE6DA;
+	--zblue: #075785;
+	--zbackground: #0E0500;
+	--zgreen: #678988;
+	--zmaroon: #91100c;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@font-face {
+  font-family: 'Druk';
+  src: url(./hero-assets/Druk-Wide-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-black';
+  src: url(./hero-assets/Akzidenz-grotesk-black.ttf);
+}
+
+
+@font-face {
+  font-family: 'akzidenz-grotesk-bold';
+  src: url(./hero-assets/Akzidenz-grotesk-bold.ttf);
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-light';
+  src: url(./hero-assets/Akzidenz-grotesk-light.ttf);
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-roman';
+  src: url(./hero-assets/Akzidenz-grotesk-roman.ttf);
+}
+
+/* @font-face{
+  font-family: 'druk-wide-cy-web-medium-regular';
+  src: url(./hero-assets/druk-wide-cy-web-medium-regular);
+} */
+
+@font-face {
+  font-family: 'druk-wide-medium-regular';
+  src: url(./hero-assets/Druk-Wide-Medium-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'druk-super-cy-gr-web';
+  src: url(./hero-assets/DrukCond-Super-Cy-Gr-Web.ttf);
+}
+
+@font-face {
+  font-family: 'druk-superitalic-web';
+  src: url(./hero-assets/DrukText-SuperItalic-Web.ttf);
+}
+
+@font-face {
+  font-family: 'druk-wide-heavy';
+  src: url(./hero-assets/DrukWide-Heavy.ttf);
+}
+
+@font-face {
+  font-family: 'druk-wide-heavy-italic';
+  src: url(./hero-assets/DrukWide-HeavyItalic-Cy-Gr-Web.ttf);
 }

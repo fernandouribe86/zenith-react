@@ -1,0 +1,52 @@
+#navbarContainer{
+  position: fixed;
+  z-index: 1000;
+}
+
+#navbar{
+background-color: transparent;
+height: 10vh;  
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:center;
+width: 100vw;
+}
+
+#hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#heroLogo{
+  height: 6.5vh;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+#fernandoName{
+  text-align: left;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  color: var(--zlunar);
+  font-size: 4vh;
+  line-height: 3vh;
+}
+#fernandoNameShort{
+  display: none
+}
+
+@media screen and (max-width: 350px){
+  #fernandoName{
+    display: none;
+  }
+
+  #fernandoNameShort{
+    display: block;
+    text-align: left;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  color: var(--zlunar);
+  font-size: 4vh;
+  line-height: 3vh;
+  }
+}

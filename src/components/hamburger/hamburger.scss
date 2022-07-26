@@ -1,0 +1,39 @@
+#hamburgerContainer{
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+}
+
+#hamburger{
+  height: 10vh;
+  width: 10vw;
+  margin-right: 25px;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#hamburgerMenu{
+  margin-top: 75px;
+}
+
+.bm-burger-button {
+  position: fixed;
+  height: 2.75vh;
+  width: 10vw;
+  max-width: 60px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--zlunar);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover, .bm-burger-bars-focus{
+  background: var(--zred);
+}
+
