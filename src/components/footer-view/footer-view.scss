@@ -1,18 +1,54 @@
 #footerContainer{
-  height: 300px;
+  width: 30vw;
   bottom: 0;
   position: fixed;
-  width: 300px;
-  background-color: blue;
+  background-color: transparent;
 }
 
 .socialContainer{
   display: flex;
   flex-direction: row;
+  width: 150px;
+  background-color: transparent;
+  border-style: none;
+}
+
+.socialContainer:hover, .socialContainer:focus{
+  cursor: pointer;
 }
 
 .socialLogo{
   height: 30px;
   margin-left: 25px;
   margin-right: 15px;
+}
+
+.socialName{
+  font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  color: var(--zlunar);
+}
+
+a{
+  text-decoration: none;  
+}
+
+.socialName:hover, .socialName:focus{
+  color: var(--zred)
+}
+
+.socialName:active{
+  color: var(--zgold)
+}
+
+.socialName:visited{
+  color: var(--zlunar)
+}
+
+.copyright{
+  color: var(--zlunar);
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 25px;
 }

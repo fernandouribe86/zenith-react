@@ -11,28 +11,29 @@ import './footer-view.scss';
 export class FooterView extends React.Component{
 
 render(){
+
   return (
   <Col id="footerContainer">
       <div id="footer">
         <div id="social">
           
-          <div className="socialContainer">
+          <Button className="socialContainer" target="_blank" href="https://github.com/fernandouribe86">
             <img src={github} alt="GitHub logo" className="socialLogo"/>
             <p className="socialName">GitHub</p>
-          </div>
+          </Button>
 
-          <div className="socialContainer">
+          <Button className="socialContainer" target="_blank" href="https://www.linkedin.com/in/fauribe/">
             <img src={linkedin} alt="LinkedIn logo" className="socialLogo"/>
             <p className="socialName">LinkedIn</p>
-          </div>
+          </Button>
 
-          <div className="socialContainer">
+          <Button className="socialContainer" target="_blank" href="https://www.twitter.com/fernandouribe">
             <img src={twitter} alt="Twitter logo" className="socialLogo"/>
             <p className="socialName">Twitter</p>
-          </div>
+          </Button>
 
         </div>
-        <p>test</p>
+        <p className="copyright">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
       </div>
      </Col>
     )

@@ -30,6 +30,7 @@ class MainView extends React.Component {
                 </div>
                 </li>
               <li className="list-item">about</li>
+              <li className="list-item">contact</li>
               
               {/* Meet App */}
               <li className="list-item">
@@ -88,7 +89,7 @@ class MainView extends React.Component {
                 {/* Amaca.tech */}
                 <li className="list-item">
                     <div className="details">
-                      <div className="year">2022</div>
+                      <div className="year">2021-Pres.</div>
                       <div className="divider"></div>
                       <div className="list-item-name">Amaca</div>
                     </div>
@@ -97,7 +98,7 @@ class MainView extends React.Component {
                 {/* Design Portfolio */}
                 <li className="list-item">
                     <div className="details">
-                      <div className="year">2022</div>
+                      <div className="year">2021-Pres</div>
                       <div className="divider"></div>
                       <div className="list-item-name">Design</div>
                     </div>
