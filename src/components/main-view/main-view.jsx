@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import {BrowserRouter as Router, Link, useNavigate, Routes, Route } from 'react-router-dom';
+import Nav from "react-bootstrap/Nav";
 import { NavbarView } from "../navbar-view/navbar-view";
 import { FooterView } from "../footer-view/footer-view";
 
@@ -9,17 +10,15 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import './main-view.scss';
+import myFlixNg from "../myflix-ng/myflix-ng";
+import { render } from "@testing-library/react";
 
-class MainView extends React.Component {
-  constructor(){
-    super();
-  }
+export default function MainView() {
 
-  render() {
     return(
-      <Container id="mainViewContainer">
+      <div id="mainViewContainer">
         <NavbarView />
-        <Col>
+        <div>
           <div className="listContainer">
             <ul className="list">
               <li className="list-item">
@@ -31,6 +30,19 @@ class MainView extends React.Component {
                 </li>
               <li className="list-item">about</li>
               <li className="list-item">contact</li>
+
+              {/* MyFlix Angular */}
+                  <Nav.Item className="list-item">                
+                      <Nav.Link href="/myflix-ng" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">myFlix<br/>Angular</div>
+                        </Nav.Link>
+                  </Nav.Item>
+
+                  {/* <Router>
+                    <Route path="/myflix-ng" element={<myFlixNg />} />
+                  </Router> */}
               
               {/* Meet App */}
               <li className="list-item">
@@ -68,15 +80,6 @@ class MainView extends React.Component {
                 </div>
                 </li>
 
-                 {/* MyFlix Angular */}
-                 <li className="list-item">
-                    <div className="details">
-                      <div className="year">2022</div>
-                      <div className="divider"></div>
-                      <div className="list-item-name">myFlix<br/>Angular</div>
-                    </div>
-                </li>
-
                 {/* Zenith Consulting */}
                 <li className="list-item">
                     <div className="details">
@@ -105,11 +108,9 @@ class MainView extends React.Component {
                 </li>
             </ul>
           </div>
-        </Col>
+        </div>
+        
         <FooterView />
-        </Container>
+        </div>
           )
       }
-    }
-
-export default MainView;
