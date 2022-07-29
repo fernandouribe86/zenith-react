@@ -6,14 +6,17 @@
 
 #hamburger{
   height: 10vh;
-  width: 10vw;
+  width: 100vw;
   margin-right: 25px;
-  background-color: transparent;
+  padding-right: 60px;
   border-style: none;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   padding-bottom: 20px;
+  z-index: 1000;
 }
 
 #hamburgerMenu{
@@ -22,8 +25,8 @@
 
 .bm-burger-button {
   position: fixed;
-  height: 2.75vh;
-  width: 10vw;
+  height: 20px;
+  width: 45px;
   max-width: 60px;
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Link, useNavigate, Routes, Route } from 'react-router-dom';
 import Nav from "react-bootstrap/Nav";
+import { NavLink } from "react-router-dom";
 import { NavbarView } from "../navbar-view/navbar-view";
 import { FooterView } from "../footer-view/footer-view";
 
@@ -10,12 +11,13 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import './main-view.scss';
-import myFlixNg from "../myflix-ng/myflix-ng";
+import MyflixNg from "../myflix-ng/myflix-ng";
 import { render } from "@testing-library/react";
 
 export default function MainView() {
 
     return(
+      
       <div id="mainViewContainer">
         <NavbarView />
         <div>
@@ -40,9 +42,15 @@ export default function MainView() {
                         </Nav.Link>
                   </Nav.Item>
 
-                  {/* <Router>
-                    <Route path="/myflix-ng" element={<myFlixNg />} />
-                  </Router> */}
+
+
+                {/* <Router>
+                  <Routes>
+                    <Route path="/myflix-ng">
+                        <myFlixNg />
+                    </Route>
+                  </Routes>
+                </Router> */}
               
               {/* Meet App */}
               <li className="list-item">
