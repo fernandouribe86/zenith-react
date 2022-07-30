@@ -4,8 +4,10 @@
   width: 100%;
   background-color: var(--zgold);
   position: fixed;
-  z-index: 750;
+  z-index: 1000;
   box-sizing: 0;
+  right: 0;
+  height: 10vh;
 }
 
 .portfolioContainer{
@@ -24,31 +26,61 @@
   align-items: center;
 }
 
-.projectImage{
-  margin-left: 7vw;
-  width: 300px;
-  height: 200px;
+.portfolioHeroContainer{
+  width: 100vw;
+  height: 38vh;
 }
 
-h1{
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+.topBox{
+  height: 30px;
+  background-color: var(--zgold);
+  width: 100vw;
+  padding-top: 20vh;
+  // margin-top: 150px
+}
+
+
+.titleContainer{
+  // margin-top: 25px;
+  // width: 100vw;
+  // height: 100%;
+  // z-index: 1000;
+  // margin-top: 30vh
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .projectName{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-size: 10vh;
+  -webkit-text-stroke: 1.5px var(--zlunar);
+letter-spacing: .05em;
+  text-align: right;
+  vertical-align: bottom;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
   margin-left: 2.5vw;
   padding-right: 7vw;
-  color: var(--zlunar);
+  z-index: 999;
+  margin-top: -73vh;
+  color: transparent
 }
 
+.heroImageContainer{
+  width: 110vw;
+  height: 60vh;
+  background-image: url('../../hero-assets/myflix-ng-main-2.png');
+  box-shadow: -5vh 5vh 5vh var(--zbackground) inset, 
+  // -50px -50px 110px #defeec inset;
 
+}
 
 .projectDetails{
   display: flex;
   padding-top: 10vh;
-  padding-bottom: 17.5vh;
+  padding-bottom: 10vh;
   align-items: center;
 }
 
@@ -66,58 +98,16 @@ h2{
 }
 
 .projectImageTwo{
-  margin-right: 100px;
-  width: 300px;
-  height: 200px;
-}
-
-.languages{
-  display: flex;
-  flex-direction: column;
-  margin-right: 20vw;
-  align-items: center;
-}
-
-.technologies{
-  display: flex;
-  flex-direction: column;
-}
-
-.projectTechnologies{
-  background-color: var(--zbackground);
-  padding-top: 10vh;
-  padding-bottom: 17.5vh;
-  clip-path: polygon(0 0, 100% 10%, 100% 75%, 0 88%);
-  padding-left: 7vw;
-  padding-right: 7vw;
-  display: flex;
-  flex-direction: row;
-}
-
-h4{
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-}
-
-.technologiesTitle{
-  color: var(--zlunar);
-  text-align: center;
-}
-
-.techUsed{
-  margin-top: 33%;
-  color: var(--zlunar)
-}
-
-.technologiesList{
-  color: var(--zlunar);
-  font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
+  // margin-right: 100px;
+  width: 40%;
+  box-shadow: 5px 5px var(--zgold), -5px -5px var(--zred);
+  border: 2px;
+  border-style: solid;
+  border-color: var(--zbackground);
 }
 
 .projectLinks{
-  padding-left: 7vw;
-  padding-right: 7vw;
+  background-color: var(--zlunar);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -131,7 +121,10 @@ h4{
 }
 
 .linksTitle{
-  padding-bottom: 50px;
+  margin-top: 10vh;
+  padding-bottom: 25px;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .projectLink-item{
@@ -173,4 +166,100 @@ h4{
 .projectChart{
   width: 250px;
   height: 250px;
+}
+
+.descriptionContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 45vh;
+  background-color: var(--zlunar);
+}
+
+
+.aboutDetails{
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: var(--zbackground);
+}
+
+.description{
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.languagesContainer{
+  height: 100%;
+  background-color: var(--zbackground);
+  margin-top: -50px;
+  padding-right: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.languages{
+  width: 100%;
+  text-align: right;
+  margin-bottom: 50px;
+  color: var(--zlunar)
+  
+}
+
+.technologiesContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.technologies{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  color: var(--zlunar)
+}
+
+h4{
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: var(--zlunar)
+}
+
+.technologiesTitle{
+  color: var(--zlunar);
+  text-align: center;
+}
+
+.techUsed{
+  color: var(--zlunar);
+}
+
+.technologiesList{
+  color: var(--zlunar);
+  font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  text-align: left;
+  padding-left: 0
+}
+
+.pieChart{
+  margin-right: 10vw;
+}
+
+.projectSocial{
+  display: flex;
+  flex-direction: row;
+}
+
+.projectFooter{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

@@ -23,13 +23,7 @@ export default function MainView() {
         <div>
           <div className="listContainer">
             <ul className="list">
-              <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">portfolio</div>
-                </div>
-                </li>
+              
               <li className="list-item">about</li>
               <li className="list-item">contact</li>
 
@@ -41,16 +35,6 @@ export default function MainView() {
                             <div className="list-item-name">myFlix<br/>Angular</div>
                         </Nav.Link>
                   </Nav.Item>
-
-
-
-                {/* <Router>
-                  <Routes>
-                    <Route path="/myflix-ng">
-                        <myFlixNg />
-                    </Route>
-                  </Routes>
-                </Router> */}
               
               {/* Meet App */}
               <li className="list-item">
@@ -113,6 +97,15 @@ export default function MainView() {
                       <div className="divider"></div>
                       <div className="list-item-name">Design</div>
                     </div>
+                </li>
+
+                {/* This Site */}
+                <li className="list-item">
+                <div className="details">
+                  <div className="year">2022</div>
+                  <div className="divider"></div>
+                  <div className="list-item-name">portfolio</div>
+                </div>
                 </li>
             </ul>
           </div>

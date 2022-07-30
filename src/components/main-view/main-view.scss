@@ -51,12 +51,13 @@
 
 
 .divider{
-  height: 60px;
-  width: 2.5px;
+  height: 100px;
+  width: 1px;
   -webkit-text-stroke: 0px;
   background-color:var(--zgold);
   margin-left: 30px;
-  margin-right: 30px
+  margin-right: 30px;
+  transform: skew(-20deg);
 }
 
 .year{
