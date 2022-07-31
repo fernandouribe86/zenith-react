@@ -17,20 +17,20 @@ render(){
       <div id="footer">
         <div id="social">
           
-          <Button className="socialContainer" target="_blank" href="https://github.com/fernandouribe86">
+          <button className="socialContainer" target="_blank" href="https://github.com/fernandouribe86">
             <img src={github} alt="GitHub logo" className="socialLogo"/>
             <p className="socialName">GitHub</p>
-          </Button>
+          </button>
 
-          <Button className="socialContainer" target="_blank" href="https://www.linkedin.com/in/fauribe/">
+          <button className="socialContainer" target="_blank" href="https://www.linkedin.com/in/fauribe/">
             <img src={linkedin} alt="LinkedIn logo" className="socialLogo"/>
             <p className="socialName">LinkedIn</p>
-          </Button>
+          </button>
 
-          <Button className="socialContainer" target="_blank" href="https://www.twitter.com/fernandouribe">
+          <button className="socialContainer" target="_blank" href="https://www.twitter.com/fernandouribe">
             <img src={twitter} alt="Twitter logo" className="socialLogo"/>
             <p className="socialName">Twitter</p>
-          </Button>
+          </button>
 
         </div>
         <p className="copyright">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>

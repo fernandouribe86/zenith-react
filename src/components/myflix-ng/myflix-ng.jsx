@@ -76,25 +76,19 @@ export default function MyflixNg() {
               </div>
         </div>
         <div className="languagesContainer">
-          <div className="languages">
-            <h2>Languages & Technologies</h2>
-          </div>
           <div className="technologiesContainer">
-
+          <h2 className="languagesTitle">Languages & Technologies</h2>
             <div className="technologies">
-                  <h4 className="techUsed">Technologies Used</h4>
                   <ul className="technologiesList">
                     <li>MEAN (MongoDB, Express, Angular, Node.js)</li>
                     <li>Angular Material UI</li>
                     <li>REST API</li>
                     <li>TypeDoc</li>
                   </ul>
-                </div>
-
-            <div className="pieChart">
-              <PortfolioPieChart />
-            </div>
-            
+                  <div className="pieChart">
+                    <PortfolioPieChart />
+                  </div>
+            </div>            
           </div>
         </div>
         <div className="projectLinks">

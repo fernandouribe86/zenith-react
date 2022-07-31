@@ -36,16 +36,10 @@
   background-color: var(--zgold);
   width: 100vw;
   padding-top: 20vh;
-  // margin-top: 150px
 }
 
 
 .titleContainer{
-  // margin-top: 25px;
-  // width: 100vw;
-  // height: 100%;
-  // z-index: 1000;
-  // margin-top: 30vh
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -77,20 +71,6 @@ letter-spacing: .05em;
 
 }
 
-.projectDetails{
-  display: flex;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  align-items: center;
-}
-
-.projectDescription{
-  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
-  padding-left: 7vw;
-  margin-right: 7vw;
-  font-size: 15px;
-  line-height: 1.5em;
-}
 
 h2{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
@@ -181,7 +161,7 @@ h2{
   margin-left: 10vw;
   margin-right: 10vw;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   color: var(--zbackground);
 }
 
@@ -195,42 +175,32 @@ h2{
   height: 100%;
   background-color: var(--zbackground);
   margin-top: -50px;
-  padding-right: 10vw;
+  // padding-right: 10vw;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
-.languages{
+
+.languagesTitle{
   width: 100%;
-  text-align: right;
-  margin-bottom: 50px;
+  text-align: center;
   color: var(--zlunar)
-  
 }
 
 .technologiesContainer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.technologies{
-  display: flex;
   flex-direction: column;
-  margin-left: 10vw;
-  color: var(--zlunar)
+  justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px
 }
+
+
 
 h4{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: var(--zlunar)
-}
-
-.technologiesTitle{
-  color: var(--zlunar);
-  text-align: center;
 }
 
 .techUsed{
@@ -242,11 +212,12 @@ h4{
   font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
   line-height: 1.5em;
   text-align: left;
-  padding-left: 0
+  margin-right: 35vw;
+  min-width: 280px;
 }
 
 .pieChart{
-  margin-right: 10vw;
+  width: 100%;
 }
 
 .projectSocial{
@@ -262,4 +233,14 @@ h4{
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.technologies{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  color: var(--zlunar);
+  padding-left: 15vw;
 }

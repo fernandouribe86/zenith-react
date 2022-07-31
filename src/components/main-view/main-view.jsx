@@ -24,11 +24,18 @@ export default function MainView() {
           <div className="listContainer">
             <ul className="list">
               
-              <li className="list-item">about</li>
+              {/* About Page */}
+              <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/about" className="details">
+                            <div className="list-item-name">About</div>
+                        </Nav.Link>
+                  </Nav.Item>
+
+              {/* About Page */}    
               <li className="list-item">contact</li>
 
               {/* MyFlix Angular */}
-                  <Nav.Item className="list-item">                
+                  <Nav.Item className="list-item nav-item">                
                       <Nav.Link href="/myflix-ng" className="details">
                             <div className="year">2022</div>
                             <div className="divider"></div>

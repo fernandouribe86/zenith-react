@@ -13,7 +13,7 @@
 	--zmaroon: #91100c;
 }
 
-html, body {
+html, body{
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -80,3 +80,4 @@ html, body {
   font-family: 'druk-wide-heavy-italic';
   src: url(./hero-assets/DrukWide-HeavyItalic-Cy-Gr-Web.ttf);
 }
+
