@@ -111,6 +111,13 @@ letter-spacing: .05em;
   background-size: cover;
 }
 
+.heroImageContainer-portfolio{
+  width: 110vw;
+  height: 60vh;
+  background-image: url('../../hero-assets/portfolio-main.png');
+  box-shadow: -5vh 7vh 5vh var(--zbackground) inset, 
+}
+
 h2{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;

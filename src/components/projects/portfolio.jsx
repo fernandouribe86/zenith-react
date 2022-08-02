@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 
-import imageTwo from '../../hero-assets/myflix-ng-profile.png';
+import imageTwo from '../../hero-assets/portfolio-two.png';
 import github from '../../hero-assets/gh.png';
 import twitter from '../../hero-assets/twitter.png';
 import linkedin from '../../hero-assets/linkedin-1.png';
@@ -23,10 +23,10 @@ import PortfolioPieChart from "../pie-chart/pie-chart";
 export default function PortfolioView() {
 
   const data = [
-    { name: 'TypeScript', value: 638 },
-    { name: 'HTML', value: 183 },
-    { name: 'SCSS', value: 159 },
-    { name: 'JavaScript', value: 20 },
+    { name: 'JavaScript', value: 609 },
+    { name: 'SCSS', value: 310 },
+    { name: 'HTML', value: 41 },
+    { name: 'CSS', value: 40 },
   ];
 
 
@@ -40,16 +40,16 @@ export default function PortfolioView() {
         </Col>
         <div className="topBox">
         <div>
-          <h1 className="projectName">MyFlix<br/>Angular</h1>
+          <h1 className="projectName">Fernando's<br/>Portfolio</h1>
         </div>
         </div>
         <div className="portfolioHeroContainer">
-          <div className="heroImageContainer-myflixNg">
+          <div className="heroImageContainer-portfolio">
           </div>
         </div>
         <div className="descriptionContainer">
-              <div><h2 className="projectDescription-title">About MyFlix Angular</h2></div>
-              <div><p className="description">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p></div>
+              <div><h2 className="projectDescription-title">About This site</h2></div>
+              <div><p className="description">"Seeing double? I know this is kind of meta, but I wanted to give you a peek behind this site, and see how it was done! I channeled my love of graphic design into this site. And yes, the colors and fonts are bold and in-your-face. But when you get to know me, you won't be surprised that I went this way! Thanks for stopping by to check out my work." -Fernando</p></div>
                 <Image src={imageTwo} className="projectImageTwo"/>
         </div>
         <div className="languagesContainer">
@@ -62,10 +62,10 @@ export default function PortfolioView() {
                   </Col>
                   <Col className="technologiesListContainer">
                     <ul className="techList">
-                      <li>MEAN (MongoDB, Express, Angular, Node.js)</li>
-                      <li>Angular Material UI</li>
-                      <li>REST API</li>
-                      <li>TypeDoc</li>
+                      <li>React</li>
+                      <li>Boostrap React</li>
+                      <li>Node.js</li>
+                      <li>Recharts</li>
                     </ul>
                   </Col>
             </Row>            
@@ -73,11 +73,9 @@ export default function PortfolioView() {
         </div>
         <div className="projectLinks">
               <h2 className="linksTitle">Project Links</h2>
-              <p className="linkDescription">Check out the project links below. Feel free to create an account and add a few movies to your favorites!</p>
+              <p className="linkDescription">Want to take a peek under the hood? Be our guest!</p>
               <div className="projectLinkContainer">
-                <Button target="_blank" href="https://myflix-angular.netlify.app/" className="projectLink-item">Launch Site</Button>
-                <Button target="_blank" href="https://github.com/fernandouribe86/movie_api_2/blob/main/index.js" className="projectLink-item">View API</Button>
-                <Button target="_blank" href="https://github.com/fernandouribe86/myFlix-Angular-client" className="projectLink-item">View in GitHub</Button>
+                <Button target="_blank" href="https://github.com/fernandouribe86/zenith-react" className="projectLink-item">View in GitHub</Button>
                 </div>
         </div>
         <div className="projectFooter">

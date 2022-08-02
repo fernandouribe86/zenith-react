@@ -102,13 +102,13 @@ export default function MainView() {
                   </Nav.Item>
 
                 {/* Design Portfolio */}
-                <li className="list-item">
-                    <div className="details">
-                      <div className="year">2021-Pres</div>
-                      <div className="divider"></div>
-                      <div className="list-item-name">Design</div>
-                    </div>
-                </li>
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/design" className="details">
+                            <div className="year">2021-Pres</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Design</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
                 {/* This Site */}
                 <Nav.Item className="list-item nav-item">                
