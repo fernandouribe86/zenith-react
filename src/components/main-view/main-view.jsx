@@ -11,7 +11,11 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import './main-view.scss';
-import MyflixNg from "../myflix-ng/myflix-ng";
+
+import MyflixNg from "../projects/myflix-ng";
+import MyflixReact from "../projects/myflix-rt";
+import MeetView from "../projects/meet";
+
 import { render } from "@testing-library/react";
 
 export default function MainView() {
@@ -44,58 +48,58 @@ export default function MainView() {
                   </Nav.Item>
               
               {/* Meet App */}
-              <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">meet PWA</div>
-                </div>
-                </li>
+              <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/meet" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Meet<br/>PWA</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
               {/* Pokedex */}
-                <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">Pokedex</div>
-                </div>
-                </li>
+              <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/pokedex" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Pokedex</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
                 {/* myFlix React */}
-                <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">myFlix<br/>React</div>
-                </div>
-                </li>
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/myflix-rt" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">myFlix<br/>React</div>
+                        </Nav.Link>
+                  </Nav.Item>
                 
                 {/* Chat App */}
-                <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">React-Native<br/>Chat App</div>
-                </div>
-                </li>
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/chat" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">React-Native<br/>Chat App</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
                 {/* Zenith Consulting */}
-                <li className="list-item">
-                    <div className="details">
-                      <div className="year">2022</div>
-                      <div className="divider"></div>
-                      <div className="list-item-name">Zenith</div>
-                    </div>
-                </li>
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/zenith" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Zenith</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
-                {/* Amaca.tech */}
-                <li className="list-item">
-                    <div className="details">
-                      <div className="year">2021-Pres.</div>
-                      <div className="divider"></div>
-                      <div className="list-item-name">Amaca</div>
-                    </div>
-                </li>
+                {/* Pluribus Media */}
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/pluribus" className="details">
+                            <div className="year">2021-Pres</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Pluribus<br/>Media</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
                 {/* Design Portfolio */}
                 <li className="list-item">
@@ -107,13 +111,14 @@ export default function MainView() {
                 </li>
 
                 {/* This Site */}
-                <li className="list-item">
-                <div className="details">
-                  <div className="year">2022</div>
-                  <div className="divider"></div>
-                  <div className="list-item-name">portfolio</div>
-                </div>
-                </li>
+                <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/portfolio" className="details">
+                            <div className="year">2022</div>
+                            <div className="divider"></div>
+                            <div className="list-item-name">Portfolio</div>
+                        </Nav.Link>
+                  </Nav.Item>
+
             </ul>
           </div>
         </div>

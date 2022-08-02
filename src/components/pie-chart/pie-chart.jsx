@@ -109,7 +109,7 @@ export default class PortfolioPieChart extends PureComponent {
     const colors = ['#91100c', '#B83D00', '#FF6508', '#FF853D', '#FFA067'];
 
     return (
-        <PieChart width={400} height={300} id="pieChart">
+        <PieChart width={410} height={300} id="pieChart">
           <Pie
             activeIndex={this.state.activeIndex}
             activeShape={renderActiveShape}
