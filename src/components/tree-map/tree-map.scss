@@ -1,0 +1,24 @@
+#gridName-label{
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  z-index: 1000;
+  color: var(--zlunar);
+  text-overflow: ellipsis;
+}
+
+#treeMap{
+  margin-bottom: 25px;
+  margin-top: 15px;
+  height: 65%;
+}
+
+#tooltip{
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+}
+
+.tooltipHeader{
+  color: var(--zbackground);
+  font-size: 14px;
+}

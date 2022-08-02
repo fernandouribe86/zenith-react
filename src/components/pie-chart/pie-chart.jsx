@@ -5,23 +5,28 @@ import { useEffect, useState } from 'react';
 
 import './pie-chart.scss';
 
-const data = [
-  { name: 'HTML', value: 400 },
-  { name: 'CSS', value: 300 },
-  { name: 'SCSS', value: 300 },
-  { name: 'JavaScript', value: 200 },
-  { name: 'TypeScript', value: 100 },
-];
+// const data = [
+  // { name: 'HTML', value: 400 },
+  // { name: 'CSS', value: 300 },
+  // { name: 'SCSS', value: 300 },
+  // { name: 'JavaScript', value: 200 },
+  // { name: 'TypeScript', value: 100 },
+// ];
 
-// const [data, setData] = useState([]);
-//     useEffect(() => {
-//       const getData = () => {
-//         const value = ['HTML', 'CCS', 'SCSS', 'JavaScript', 'TypeScript'];
-//         const data = this.data;
-//       };
-//     });
+// const [data, setData] = useState([{ name: 'HTML', value: 400 },
+// { name: 'CSS', value: 300 },
+// { name: 'SCSS', value: 300 },
+// { name: 'JavaScript', value: 200 },
+// { name: 'TypeScript', value: 100 },]);
+    // useEffect(() => {
+    //   const getData = () => {
+    //     const value = ['HTML', 'CCS', 'SCSS', 'JavaScript', 'TypeScript'];
+    //     const data = this.data;
+    //   };
+    // });
 
 const renderActiveShape = (props) => {
+
   const RADIAN = Math.PI / 180;
   const { cx, cy, midAngle, innerRadius, outerRadius, startAngle, endAngle, fill, payload, percent, value } = props;
   const sin = Math.sin(-RADIAN * midAngle);
@@ -84,6 +89,13 @@ export default class PortfolioPieChart extends PureComponent {
 
   state = {
     activeIndex: 0,
+    data: [
+      { name: 'HTML', value: 400 },
+    { name: 'CSS', value: 300 },
+    { name: 'SCSS', value: 300 },
+    { name: 'JavaScript', value: 200 },
+    { name: 'TypeScript', value: 100 }
+  ],
   };
 
   onPieEnter = (_, index) => {
@@ -97,11 +109,11 @@ export default class PortfolioPieChart extends PureComponent {
     const colors = ['#91100c', '#B83D00', '#FF6508', '#FF853D', '#FFA067'];
 
     return (
-        <PieChart width={300} height={300} id="pieChart">
+        <PieChart width={400} height={300} id="pieChart">
           <Pie
             activeIndex={this.state.activeIndex}
             activeShape={renderActiveShape}
-            data={data}
+            data={this.props.data}
             cx="50%"
             cy="50%"
             innerRadius={50}
@@ -110,7 +122,7 @@ export default class PortfolioPieChart extends PureComponent {
             fill="#91100c"
             dataKey="value"
             onMouseEnter={this.onPieEnter}>
-          {data.map((entry, index) => (
+          {this.props.data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />))}
               </Pie>
         </PieChart>

@@ -28,6 +28,7 @@ import { Hamburger } from "../hamburger/hamburger";
 import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 
 import PortfolioPieChart from "../pie-chart/pie-chart";
+import SkillsTree from "../tree-map/tree-map";
 
 export default function AboutView() {
 
@@ -55,9 +56,9 @@ export default function AboutView() {
           </Col>
         </Col>
 
-        <Col id="techSkills">
+        <Row id="techSkills" lg={12} md={12} sm={12} xs={12}>
           <Col className="langContainer">
-            <Carousel id="skillsCoursel" interval={10000}>
+            <Carousel id="skillsCoursel" interval={7500}>
               <Carousel.Item className="carouselItem">
                       <h3 className="carouselCaption">Languages</h3>
                         <ul className="carouselList">
@@ -90,7 +91,7 @@ export default function AboutView() {
                         </ul>
                 </Carousel.Item>
                 <Carousel.Item className="carouselItem">
-                    <h3 className="carouselCaption">Additional Resources</h3>
+                    <h3 className="carouselCaption">Additional Skills</h3>
                         <ul className="carouselList">
                           <li className="carouselList-item">VSCode</li>
                           <li className="carouselList-item">Postman</li>
@@ -103,17 +104,11 @@ export default function AboutView() {
             </Carousel>
           </Col>
           <Col className="aboutStrengths">
-            <h3>Strengths</h3>
-            <ul>
-              <li>ay</li>
-              <li>ay</li>
-              <li>ay</li>
-              <li>ay</li>
-              <li>ay</li>
-            </ul>
+            <h3 className="strengthsHeader">ATTRIBUTES</h3>
+            <SkillsTree />
           </Col>
-        </Col>        
-       <FooterView />
+        </Row>        
+       <FooterView/>
       </Container>
     )
 }

@@ -7,23 +7,15 @@
   z-index: 1000;
   box-sizing: 0;
   right: 0;
+  padding-right: 50px;
+  margin: 0;
   height: 10vh;
 }
 
-.portfolioContainer{
+.projectContainer{
   background-color: var(--zlunar);
-}
-
-.portfolioMain{
-  text-align: left;
-  padding-top: 11vh;
-  color: white;
-  background-color: var(--zgold);
-  height: 300px;
-  clip-path: polygon(0 0%, 100% 0, 100% 88%, 0% 100%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .portfolioHeroContainer{
@@ -35,7 +27,8 @@
   height: 30px;
   background-color: var(--zgold);
   width: 100vw;
-  padding-top: 20vh;
+  padding-top: 25vh;
+  margin: 0
 }
 
 
@@ -48,7 +41,7 @@
 .projectName{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 10vh;
+  font-size: 8vh;
   -webkit-text-stroke: 1.5px var(--zlunar);
 letter-spacing: .05em;
   text-align: right;
@@ -56,9 +49,9 @@ letter-spacing: .05em;
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-left: 2.5vw;
-  padding-right: 7vw;
+  padding-right: 10vw;
   z-index: 999;
-  margin-top: -73vh;
+  margin-top: -10vh;
   color: transparent
 }
 
@@ -66,8 +59,7 @@ letter-spacing: .05em;
   width: 110vw;
   height: 60vh;
   background-image: url('../../hero-assets/myflix-ng-main-2.png');
-  box-shadow: -5vh 5vh 5vh var(--zbackground) inset, 
-  // -50px -50px 110px #defeec inset;
+  box-shadow: -5vh 7vh 5vh var(--zbackground) inset, 
 
 }
 
@@ -78,12 +70,14 @@ h2{
 }
 
 .projectImageTwo{
-  // margin-right: 100px;
-  width: 40%;
+
+  width: 80%;
   box-shadow: 5px 5px var(--zgold), -5px -5px var(--zred);
   border: 2px;
   border-style: solid;
   border-color: var(--zbackground);
+  min-width: 250px;
+  max-width: 600px;
 }
 
 .projectLinks{
@@ -116,7 +110,6 @@ h2{
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--zgold);
-  text-transform: uppercase;
   letter-spacing: .1em;
   border-radius: 4px;
   border-style: none;
@@ -150,25 +143,35 @@ h2{
 
 .descriptionContainer{
   display: flex;
-  flex-direction: row;
-  margin-top: 45vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
   background-color: var(--zlunar);
 }
 
 
 .aboutDetails{
+  display: flex;
+  flex-direction: column;
   text-align: left;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
   color: var(--zbackground);
+  width: 90%;
+
+}
+
+.projectDescription-title{
+  margin-bottom: 10vh;
 }
 
 .description{
   font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 10vh;
 }
 
 .languagesContainer{
@@ -184,7 +187,8 @@ h2{
 .languagesTitle{
   width: 100%;
   text-align: center;
-  color: var(--zlunar)
+  color: var(--zlunar);
+  margin-top: 10vh;
 }
 
 .technologiesContainer{
@@ -207,17 +211,28 @@ h4{
   color: var(--zlunar);
 }
 
-.technologiesList{
+.technologiesListContainer{
   color: var(--zlunar);
   font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
   line-height: 1.5em;
-  text-align: left;
-  margin-right: 35vw;
   min-width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.techList{
+  // text-align: left;
+  margin-left: -30px;
+  list-style: none;
 }
 
 .pieChart{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .projectSocial{
@@ -233,14 +248,101 @@ h4{
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: var(--zlunar);
+}
+
+.projectFooter-social{
+  color: var(--zbackground);
+}
+
+.projectFooterLogo{
+  filter: brightness(15%);
+  margin-top: -5px;
 }
 
 .technologies{
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: var(--zlunar);
-  padding-left: 15vw;
+  margin:0;
+  padding: 0;
+}
+
+.socialContainerProject{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.socialContainerProject:hover, .socialContainerProject:focus{
+  background-color: var(--zlunar);
+}
+
+.socialContainerProject:active{
+  border-style: none;
+  border-color: none;
+}
+
+@media screen and (max-width: 650px) {
+  .projectName{
+    text-align: center;
+    font-size: 3.6vh;
+    margin-top: -10vh; 
+    -webkit-text-stroke: 1.5px var(--zlunar);
+    padding-right: 0;
+  }
+  .topBox{
+    padding-top: 20vh;
+  }
+
+  .pieChart{
+    display: block;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .projectLinkContainer{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .projectLink-item{
+    margin-bottom: 25px;
+  }
+
+  .linkDescription{
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+
+  .projectSocial{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projectFooterLogo{
+    margin-left:0
+  }
+}
+
+@media screen and (max-width: 500px){
+  .projectName{
+    -webkit-text-stroke: 1.25px var(--zlunar);
+  }
+
+  .languagesTitle{
+    font-size: 7vw;
+  }
 }
