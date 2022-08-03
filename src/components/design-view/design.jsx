@@ -11,6 +11,11 @@ import github from '../../hero-assets/gh.png';
 import twitter from '../../hero-assets/twitter.png';
 import linkedin from '../../hero-assets/linkedin-1.png';
 
+import logoF from '../../hero-assets/logo-f.png';
+import logoFace from '../../hero-assets/logo-face.png';
+import logoCurly from '../../hero-assets/logo-curly.png';
+
+import brandGuide from '../../hero-assets/example-brand-guide.pdf';
 
 import './design.scss';
 
@@ -24,84 +29,88 @@ export default function DesignView() {
     return (
       <Container className="projectContainer">
         <Col>
-          <Row className="navbarPortfolio">
+          <Row className="navbarDesign">
             <NavbarView />
             <Hamburger />
           </Row>
         </Col>
-        <div className="topBox">
+        <div className="topBox-design">
           <div>
-            <h1 className="projectName">Design</h1>
+            <h1 className="designName">Design</h1>
           </div>
         </div>
         <Row 
         className="aboutDesign"
         lg={12} md={12} sm={12} xs={12}
         >
-            <Col 
-            className="styleContainer"
-            lg={3} md={6} sm={6} xs={12}
-            >
-              <h1 className="styleLabel">Bold</h1>
-              <p>Fernando's style is bold, there's no getting around it. He does not shy away from bright or in-your-face colors. Your brand will make a statement and everyone will take notice. It will provoke an emotional response that will draw people in.</p>
+          <Row id="styleContainer">
+            <Col lg={5} md={5} sm={5} xs={3} className="boxLeft"></Col>
+            <Col className="styleLeft">
+            <h1 className="styleTitle">BOLD</h1>
+            <p className="styleDescription">Fernando's style is bold, there's no getting around it. He does not shy away from bright or in-your-face colors. Your brand will make a statement and everyone will take notice. It will provoke an emotional response that will draw people in.</p>
             </Col>
-            <Col 
-            className="styleContainer"
-            lg={3} md={6} sm={6} xs={12}
-            >
-              <h1 className="styleLabel">Timeless</h1>
-              <p>Inspired by the architecture of Frank Lloyd Wright, the Bauhaus art movement, and Swiss Typography, Fernando's style aims to be vintage and timeless, but modern and fun. Your brand will feel established and sophisticated, yet new and exhilarating.</p>
+          </Row>
+          <Row>
+
+            <Col className="styleRight">
+            <h1 className="styleTitle-right">Timeless</h1>
+            <p className="styleDescription-right">Inspired by the architecture of Frank Lloyd Wright, the Bauhaus art movement, and Swiss Typography, Fernando's style aims to be vintage and timeless, but modern and fun. Your brand will feel established and sophisticated, yet new and exhilarating.</p>
             </Col>
-            <Col 
-            className="styleContainer"
-            lg={3} md={6} sm={6} xs={12}
-            >
-              <h1 className="styleLabel">Custom</h1>
-              <p>Teamwork is the number one priority. While Fernando's vision and style can be commanding, it means nothing if it cannot compliment the needs of the client. His background as a servant leader allows him to put ego aside to always seek the win-win-win.</p>
+            <Col lg={4} md={4} sm={4} xs={3} className="boxRight"></Col>
+          </Row>
+          <Row>
+            <Col lg={3} md={3} sm={3} xs={3} className="boxLeft"></Col>
+            <Col className="styleLeft">
+            <h1 className="styleTitle">Custom</h1>
+            <p className="styleDescription">Teamwork is the number one priority. While Fernando's vision and style can be commanding, it means nothing if it cannot compliment the needs of the client. His background as a servant leader allows him to put ego aside to always seek the win-win-win.</p>
             </Col>
-            <Col 
-            className="styleContainer"
-            lg={3} md={6} sm={6} xs={12}
-            >
-              <h1 className="styleLabel">Versatile</h1>
-              <p>Your site, design, and branding need to work across different devices, platforms, and media. Fernando focuses on ensuring all of the above are consistent across the board with strict attention to detail and consistency.</p>
+          </Row>
+          <Row>
+
+            <Col className="styleRight">
+            <h1 className="styleTitle-right">Versatile</h1>
+            <p className="styleDescription-right">Your site, design, and branding need to work across different devices, platforms, and media. Fernando focuses on ensuring all of the above are consistent across the board with strict attention to detail and consistency.</p>
             </Col>
+            <Col lg={5} md={5} sm={5} xs={3} className="boxRight"></Col>
+          </Row>
         </Row>
         <Row className="analysisContainer">
           <h1 className="analysisTitle">Design Analysis</h1>
+          <Col lg={4} md={4} sm={12} xs={12}>
+            <Image src={logoFace} alt="logo Face" className="designLogo" />
+            <p className="analysisText">The first thing your brain notices is the face in the logo. Fernando wants your clients to connect with your brand on a personal level in order to bring out that deeper undestanding of their needs, wants, and desires. 
+            <br/>
+            <br/>
+            We also want to remember that your and my end-users are always people, and that we must design with the needs and tendencies of real human being, not hypotheticals.
+            </p>
+          </Col>
+          <Col lg={4} md={4} sm={12} xs={12}>
+            <Image src={logoF} alt="logo F" className="designLogo" />
+            <p className="analysisText">Next, your eyes notice the “F”. This is a reflection of Fernando’s personal mission to always look for the profound, unseen meaning in design and development.
+            <br />
+            <br />
+            This is also meant to emphasize Fernando’s commanding aesthetic in his work. While collaboration is always the priority, he strives to work with clients that share his bold design visions that inspire an emotional response.
+            </p>
+          </Col>
+          <Col lg={4} md={4} sm={12} xs={12}>
+            <Image src={logoCurly} alt="logo Face" className="designLogo" />
+            <p className="analysisText">Lastly, you’ll notice the “curly brace” in the logo. This highlights Fernando’s web development background as the forward-facing part of the company. 
+            <br/>
+            <br/>
+            In web development, the curly brace {} is often used to evaluate an expression in JavaScript, and thus continue’s Fernando’s desire to provoke emotional responses through his work.
+
+
+            </p>
+          </Col>
+          <Row className="downloadContainer">
+            <p className="downloadDescription">Check out the style guide below to see how our team can create a uniform design language for you.</p>
+            <button id="downloadButton">
+              <a href={brandGuide} download>
+                Download Example Brand Guide
+              </a>
+            </button>
+          </Row>
         </Row>
-        {/* <div className="portfolioHeroContainer">
-          <div className="heroImageContainer-zenith">
-          </div>
-        </div>
-        <div className="descriptionContainer">
-              <div><h2 className="projectDescription-title">About Zenith Consulting</h2></div>
-              <div><p className="description">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p></div>
-                <Image src={imageTwo} className="projectImageTwo"/>
-        </div>
-        <div className="languagesContainer">
-          <div className="technologiesContainer">
-          <h2 className="languagesTitle">Languages & Technologies</h2>
-            <Row className="technologies">
-              
-                  <Col className="pieChart">
-                    <PortfolioPieChart data={data} />
-                  </Col>
-                  <Col className="technologiesListContainer">
-                    <ul className="techList">
-                      <li>"This is my first website I build after just two weeks of my</li><li>bootcamp! I will never forget the feeling of accomplishment </li><li>when I first finished it, and even though it's a simple site,</li><li> I felt like I was learning a new superpower." </li><li>-Fernando</li>
-                    </ul>
-                  </Col>
-            </Row>            
-          </div>
-        </div>
-        <div className="projectLinks">
-              <h2 className="linksTitle">Project Links</h2>
-              <p className="linkDescription">Check out the project link below! The website is currently under re-construction and will be updated soon.</p>
-              <div className="projectLinkContainer">
-                <Button target="_blank" href="https://github.com/fernandouribe86/portfolio-website" className="projectLink-item">View in GitHub</Button>
-                </div>
-        </div> */}
         <div className="projectFooter">
               <div className="projectSocial">
                 

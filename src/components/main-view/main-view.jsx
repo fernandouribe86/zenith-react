@@ -35,8 +35,12 @@ export default function MainView() {
                         </Nav.Link>
                   </Nav.Item>
 
-              {/* About Page */}    
-              <li className="list-item">contact</li>
+              {/* Contact Page */}    
+              <Nav.Item className="list-item nav-item">                
+                      <Nav.Link href="/contact" className="details">
+                            <div className="list-item-name">Contact</div>
+                        </Nav.Link>
+                  </Nav.Item>
 
               {/* MyFlix Angular */}
                   <Nav.Item className="list-item nav-item">                

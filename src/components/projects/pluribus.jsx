@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 
-import imageTwo from '../../hero-assets/amaca.png';
+import imageTwo from '../../hero-assets/amaca-main-2.jpeg';
 import github from '../../hero-assets/gh.png';
 import twitter from '../../hero-assets/twitter.png';
 import linkedin from '../../hero-assets/linkedin-1.png';

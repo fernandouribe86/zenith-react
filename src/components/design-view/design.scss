@@ -1,35 +1,59 @@
+.navbarDesign{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--zbackground);
+  position: fixed;
+  z-index: 1000;
+  box-sizing: 0;
+  right: 0;
+  padding-right: 50px;
+  margin: 0;
+  height: 10vh;
+}
+
+.topBox-design{
+  height: 30px;
+  background-color: var(--zbackground);
+  width: 100vw;
+  padding-top: 25vh;
+  margin: 0
+}
+
 .aboutDesign{
   width: 100vw;
   margin: 0;
   padding: 0;
+  transform-style: preserve-3d;
+  background-color: var(--zbackground);
+  box-sizing: 0;
 }
 
-.styleContainer{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.styleContainer:nth-child(odd){
-  background-color: var(--zlunar);
-  color: var(--zbackground)
-}
-
-.styleContainer:nth-child(even){
-  background-color: #f1f0ef;
-  color: var(--zbackground)
-}
-
-.styleLabel{
+.designName{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 7vh;
+letter-spacing: .05em;
+  text-align: right;
+  vertical-align: bottom;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-left: 2.5vw;
+  padding-right: 10vw;
+  z-index: 999;
+  margin-top: -10vh;
+  color: var(--zred);
+}
+
+.designName:hover, .designName:focus{
+  -webkit-text-stroke: 1.5px var(--zred);
+  color: transparent
 }
 
 .analysisContainer{
   background-color: var(--zbackground);
-  height: 100px;
+  height: 100%;
+  margin-top: -2px;
 }
 
 .analysisTitle{
@@ -37,5 +61,153 @@
   text-transform: uppercase;
   font-size: 36px;
   margin-top: 60px;
+  color: var(--zlunar);
+  margin-bottom: 50px;
+}
+
+.designLogo{
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.analysisText{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+  line-height: 1.75em;
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.boxLeft{
+  background-color: var(--zred);
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 600px;
+  box-shadow: 5px 5px var(--zgold);
+  margin-left: -5px;
+}
+
+.styleLeft{
+  text-align: left;
+  margin-top: 10vh;
+  margin-left: -65px;
+  padding-right: 10vw;
+}
+
+.styleTitle{
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
   color: var(--zlunar)
+}
+
+.styleTitle:hover, .styleTitle:focus{
+  -webkit-text-stroke: 1.5px var(--zlunar);
+  color: transparent;
+  perspective-origin: center right;
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+.styleDescription{
+  color: white;
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-left: 65px;
+}
+
+.boxRight{
+  background-color: var(--zgold);
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 600px;
+  box-shadow: -5px 5px var(--zred);
+  margin-right: -5px;
+}
+
+.styleRight{
+  text-align: right;
+  margin-top: 10vh;
+  margin-right: -65px;
+  padding-left: 10vw;
+  z-index: 750;
+}
+
+.styleTitle-right{
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: var(--zlunar);
+  word-wrap: break-word;
+}
+
+.styleTitle-right:hover, .styleTitle-right:focus{
+  -webkit-text-stroke: 1.5px var(--zlunar);
+  color: transparent;
+  transform: rotateX(-10deg) rotateY(10deg);
+}
+
+.styleDescription-right{
+  color: white;
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-right: 65px;
+}
+
+.styleContainer{
+  margin: 0;
+  padding: 0;
+}
+
+.downloadContainer{
+  background-color: var(--zbackground);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadDescription{
+  color: var(--zlunar);  
+  font-family: 'akzidenz-grotesk-bold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
+#downloadButton{
+  background-color: var(--zgold);
+  color: var(--zlunar);
+  border-style: none;
+  width: 300px;
+  max-width: 90%;
+  padding: 10px 25px 10px 25px;
+  height: 46px;
+  border-radius: 23px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+#downloadButton a{
+  color: var(--zlunar);
+  font-family: 'akzidenz-grotesk-roman', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#downloadButton:hover, #downloadButton:active{
+  background-color: green;
+  cursor: pointer;
+}
+
+#downloadButton:active{
+  background-color: var(--zred);
+  cursor: pointer;
+}
+
+.footerDesign{
+  bottom: 0;
 }

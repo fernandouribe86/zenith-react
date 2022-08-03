@@ -11,6 +11,7 @@ import ZenithView from './components/projects/zenith';
 import PluribusView from './components/projects/pluribus';
 import PortfolioView from './components/projects/portfolio';
 import DesignView from './components/design-view/design';
+import ContactView from './components/contact-view/contact-view';
 
 import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
 
@@ -31,7 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MainView />} />
             <Route path="/about" element={<AboutView />} />
-            {/* <Route path="/contact" element={<ContactView />} /> */}
+            <Route path="/contact" element={<ContactView />} />
             <Route path="/myflix-ng" element={<MyflixNg />} />
             <Route path="/meet" element={<MeetView />} />
             <Route path="/pokedex" element={<PokedexView />} />

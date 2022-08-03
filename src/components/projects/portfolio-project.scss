@@ -13,7 +13,7 @@
 }
 
 .projectContainer{
-  background-color: var(--zlunar);
+  background-color: white;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -135,7 +135,7 @@ h2{
 }
 
 .projectLinks{
-  background-color: var(--zlunar);
+  background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -153,6 +153,7 @@ h2{
   padding-bottom: 25px;
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  color: var(--zgold);
 }
 
 .projectLink-item{
@@ -203,7 +204,7 @@ h2{
   margin-top: 30vh;
   padding-left: 10vw;
   padding-right: 10vw;
-  background-color: var(--zlunar);
+  background-color: white;
 }
 
 
@@ -218,6 +219,7 @@ h2{
 
 .projectDescription-title{
   margin-bottom: 10vh;
+  color: var(--zgold)
 }
 
 .description{
