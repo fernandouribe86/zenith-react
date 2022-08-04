@@ -115,7 +115,9 @@ letter-spacing: .05em;
   width: 110vw;
   height: 60vh;
   background-image: url('../../hero-assets/portfolio-main.png');
-  box-shadow: -5vh 7vh 5vh var(--zbackground) inset, 
+  box-shadow: -5vh 7vh 5vh var(--zbackground) inset;
+  background-position: top right;
+  background-size: cover
 }
 
 h2{

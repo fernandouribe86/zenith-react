@@ -18,6 +18,10 @@ import MeetView from "../projects/meet";
 
 import { render } from "@testing-library/react";
 
+import github from '../../hero-assets/gh.png';
+import linkedin from '../../hero-assets/linkedin-1.png';
+import twitter from '../../hero-assets/twitter.png';
+
 export default function MainView() {
 
     return(
@@ -126,8 +130,32 @@ export default function MainView() {
             </ul>
           </div>
         </div>
-        
-        <FooterView />
+        <Row id="footerMain">
+            <FooterView id="footerMain"/>
+        </Row>
+        <Row id="footerSmall">
+        <div className="mainFooter-small">
+              <div className="footerSocial-small">
+                
+                <Button className="footerButton-small"  target="_blank" href="https://github.com/fernandouribe86">
+                  <img src={github} alt="GitHub logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">GitHub</p>
+                </Button>
+
+                <Button className="footerButton-small"  target="_blank" href="https://www.linkedin.com/in/fauribe/">
+                  <img src={linkedin} alt="LinkedIn logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">LinkedIn</p>
+                </Button>
+
+                <Button className="footerButton-small" target="_blank" href="https://www.twitter.com/fernandouribe">
+                  <img src={twitter} alt="Twitter logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">Twitter</p>
+                </Button>
+
+              </div>
+              <p className="copyrightMain-small">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
+            </div>
+        </Row>
         </div>
           )
       }
