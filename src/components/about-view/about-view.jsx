@@ -20,6 +20,8 @@ import github from '../../hero-assets/gh.png';
 import twitter from '../../hero-assets/twitter.png';
 import linkedin from '../../hero-assets/linkedin-1.png';
 
+import cv from '../../hero-assets/fernando-uribe-cv-2.pdf';
+
 import './about-view.scss';
 
 import { NavbarView } from "../navbar-view/navbar-view";
@@ -41,24 +43,23 @@ export default function AboutView() {
             <Hamburger />
           </Row>
         </div>
-        <div className="aboutTopBox">
-        <div>
-          <h1 id="aboutHeroName">Meet<br/>Fernando</h1>
-        </div>
-        </div>
-        <Col>
-          <Col className="aboutDetails">
+        <Row className="aboutDetails">
+          
+            {/* Circular Image */}
             <Col id="aboutImageContainer" lg={6} md={6} sm={12} xs={12}>
               <div id="aboutHeroImage"></div>
             </Col>
-            <Col className="aboutText" lg={6} md={6} sm={12} xs={12}>Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.
+
+            {/* Text Area */}
+            <Col lg={6} md={6} sm={12} xs={12} className="aboutTextContainer">
+              <h1 id="aboutHeroName">Meet<br/>Fern<span/>ando</h1>
+              <p className="aboutText">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p>
             </Col>
-          </Col>
-        </Col>
+        </Row>
 
         <Row id="techSkills" lg={12} md={12} sm={12} xs={12}>
           <Col className="langContainer">
-            <Carousel id="skillsCoursel" interval={7500}>
+            <Carousel variant="dark" id="skillsCoursel" interval={7500}>
               <Carousel.Item className="carouselItem">
                       <h3 className="carouselCaption">Languages</h3>
                         <ul className="carouselList">
@@ -69,7 +70,7 @@ export default function AboutView() {
                         </ul>
                 </Carousel.Item>
                 <Carousel.Item className="carouselItem">
-                    <h3 className="carouselCaption">Libraries/Frameworks</h3>
+                    <h3 className="carouselCaption">Libraries & Frameworks</h3>
                         <ul className="carouselList">
                           <li  className="carouselList-item">React/React-Native</li>
                           <li className="carouselList-item">Angular/Angular Material</li>
@@ -107,8 +108,46 @@ export default function AboutView() {
             <h3 className="strengthsHeader">ATTRIBUTES</h3>
             <SkillsTree />
           </Col>
-        </Row>        
-       <FooterView/>
+        </Row>
+        <Row>
+          <Col id="experience">
+          <h2>Experience</h2>
+          <p>
+            <ul>
+              <li>Web Developer: 2022 - Pres.</li>
+              <li>Graphic Design: 2002 - Pres.</li>
+              <li>VP of Operations: 2018 - Pres.</li>
+              <li>Client Succes Manager, Major Accounts: 2014-2018</li>
+              <li>Financial Planner: 2010-2014</li>
+              <li>BMW Client Advisor: 2010</li>
+            </ul>
+          </p>
+          <button id="cv">
+            <a href={cv} download>Download CV</a>
+          </button>
+          </Col>
+        </Row> 
+        <div className="aboutFooter">
+              <div className="aboutSocial">
+                
+                <Button className="socialContainer socialContainerabout" target="_blank" href="https://github.com/fernandouribe86">
+                  <img src={github} alt="GitHub logo" className="socialLogo aboutFooterLogo"/>
+                  <p className="aboutFooter-social">GitHub</p>
+                </Button>
+
+                <Button className="socialContainer socialContainerabout" target="_blank" href="https://www.linkedin.com/in/fauribe/">
+                  <img src={linkedin} alt="LinkedIn logo" className="socialLogo aboutFooterLogo"/>
+                  <p className="aboutFooter-social">LinkedIn</p>
+                </Button>
+
+                <Button className="socialContainer socialContainerabout" target="_blank" href="https://www.twitter.com/fernandouribe">
+                  <img src={twitter} alt="Twitter logo" className="socialLogo aboutFooterLogo"/>
+                  <p className="aboutFooter-social">Twitter</p>
+                </Button>
+
+              </div>
+              <p className="copyright-about">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
+            </div>
       </Container>
     )
 }
