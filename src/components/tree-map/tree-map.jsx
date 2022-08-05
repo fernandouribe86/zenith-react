@@ -103,11 +103,11 @@ class SkillsMap extends PureComponent {
   }
 }
 
-function CustomTooltip({ active}){
+function CustomTooltip({ active, payload}){
   if (active){
     return(
       <div id="tooltip">
-        <h4 className="tooltipHeader">Test</h4>
+        <h4 className="tooltipHeader">{payload[0].payload.name}</h4>
       </div>
     )
   }
