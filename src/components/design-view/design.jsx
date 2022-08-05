@@ -111,8 +111,8 @@ export default function DesignView() {
             </button>
           </Row>
         </Row>
-        <div className="projectFooter">
-              <div className="projectSocial">
+        <div className="designFooter">
+              <div className="designSocial">
                 
                 <Button className="socialContainer socialContainerProject" target="_blank" href="https://github.com/fernandouribe86">
                   <img src={github} alt="GitHub logo" className="socialLogo projectFooterLogo"/>
