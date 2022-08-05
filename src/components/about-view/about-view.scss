@@ -47,11 +47,14 @@ width: 30vh;
 min-height: 240px;
 min-width: 240px;
   background-color: blue;
+  background-image: url('../../hero-assets/fernando-headhsot.jpg');
+  background-position: top center;
+  background-size: cover;
   // border-radius: 50%;
-  background-image: url('https://via.placeholder.com/500');
   box-shadow: 5px 5px var(--zgold), -5px -5px var(--zred);
   margin-bottom: 25px;
 }
+
 
 .aboutText{
   display: flex;

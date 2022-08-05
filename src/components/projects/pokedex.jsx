@@ -48,7 +48,7 @@ export default function PokedexView() {
         </div>
         <div className="descriptionContainer">
               <div><h2 className="projectDescription-title">About Pokedex (Bootstrap)</h2></div>
-              <div><p className="description">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p></div>
+              <div><p className="description">This simple Pokedex project uses the Bootstrap library to create a website that integrates the Pokemon Open API that makes it easy to search for and learn about individual Pokemon.</p></div>
                 <Image src={imageTwo} className="projectImageTwo"/>
         </div>
         <div className="languagesContainer">
@@ -71,7 +71,7 @@ export default function PokedexView() {
         </div>
         <div className="projectLinks">
               <h2 className="linksTitle">Project Links</h2>
-              <p className="linkDescription">Check out the project links below. Feel free to create an account and add a few movies to your favorites!</p>
+              <p className="linkDescription">Check out the project links below!</p>
               <div className="projectLinkContainer">
                 <Button target="_blank" href="https://fernandouribe86.github.io/simple-js-app/" className="projectLink-item">Launch Site</Button>
                 <Button target="_blank" href="https://pokeapi.co/api/v2/pokemon/?limit=150" className="projectLink-item">View API</Button>

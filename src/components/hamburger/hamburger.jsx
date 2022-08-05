@@ -12,7 +12,7 @@ export class Hamburger extends React.Component{
 
 render(){
   return (
-  <Button id="hamburger">
+  <Button id="hamburger" class="burger">
       <Menu id="hamburgerMenu" right>
         <h4>Menu</h4>
           <a id="home" className="menu-item" href="/">Home</a>

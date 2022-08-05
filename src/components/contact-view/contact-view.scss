@@ -12,20 +12,36 @@
   height: 10vh;
 }
 
+.contactContainer{
+    background-color: var(--zbackground);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 .contactName{
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 8vh;
-letter-spacing: .05em;
-  text-align: right;
+  font-size: 40px;
+  letter-spacing: .05em;
+  text-align: center;
   vertical-align: bottom;
   font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  margin-left: 2.5vw;
-  padding-right: 10vw;
   z-index: 999;
   margin-top: -10vh;
   color: var(--zgold);
+}
+
+#contactFormContainer h3{
+  margin-top: 50px;
+  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+#contactFormContainer p{
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .topBoxContact{
@@ -37,8 +53,8 @@ letter-spacing: .05em;
 }
 
 #contactFormContainer{
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  padding-bottom: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,18 +62,20 @@ letter-spacing: .05em;
   align-items: center;
   color: var(--zlunar);
   background-color: var(--zbackground);
+  margin-top: -15px;
+  z-index: 1000;
 }
 
 #contactForm{
   margin-top: 60px;
-  width: 60%;
+  width: 80%;
   max-width: 600px;
   text-align: left;
   background-color: var(--zlunar);
 padding-top: 25px;
 padding-bottom: 25px;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 5vw;
+padding-right: 5vw;
 border-radius: 7px;
 }
 
@@ -117,3 +135,12 @@ border-radius: 7px;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 300px) {
+  .contactName{
+    font-size: 32px;
+  }
+
+  #contactFormContainer h3{
+    font-size: 22px;
+  }
+}

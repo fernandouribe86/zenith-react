@@ -153,8 +153,10 @@ export default function MainView() {
                 </Button>
 
               </div>
-              <p className="copyrightMain-small">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
             </div>
+        </Row>
+        <Row id="mainCopyright">
+            <p className="copyright">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
         </Row>
         </div>
           )

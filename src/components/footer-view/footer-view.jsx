@@ -31,9 +31,7 @@ render(){
             <img src={twitter} alt="Twitter logo" className="socialLogo"/>
             <p className="socialName">Twitter</p>
           </button>
-
         </div>
-        <p className="copyright">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
       </div>
      </Col>
     )

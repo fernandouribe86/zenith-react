@@ -20,25 +20,12 @@
 }
 
 #hamburgerMenu{
-  // // margin-top: 0;
-  // // padding-top: 10vh;
-  // // background-color: blue;
-  // // width: 100%;
-  // // text-align: right;
-  // // padding-right: 40px;
-  // // line-height: 40px;
-  // // z-index: 0;
-  // padding-right: 300px;
-  // width: 100%;
   margin-top: 5.5vh;
   background-color: rgb(28, 28, 28);
   z-index: 0;
   padding-right: 40px;
   text-align: right;
   overflow-y: hidden; /* Hide vertical scrollbar */
-
-
-  // box-shadow: 0;
 }
 
 #hamburgerMenu:-webkit-scrollbar{
@@ -83,7 +70,6 @@
   background: var(--zred);
 }
 
-.bm-overlay{
-  background-color: none;
-  // width: 100px;
+.bm-overlay {
+  background: none !important; /* Will give you a white overlay */
 }

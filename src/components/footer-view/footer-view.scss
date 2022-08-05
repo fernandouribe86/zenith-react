@@ -3,6 +3,7 @@
   bottom: 0;
   position: fixed;
   background-color: transparent;
+  padding-bottom: 20px;
 }
 
 .socialContainer{
@@ -43,12 +44,4 @@ a{
 
 .socialName:visited{
   color: var(--zlunar)
-}
-
-.copyright{
-  color: var(--zlunar);
-  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 25px;
 }

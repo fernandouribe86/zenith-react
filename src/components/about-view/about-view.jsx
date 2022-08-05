@@ -5,6 +5,7 @@ import { FooterView } from "../footer-view/footer-view";
 import { Image } from "react-bootstrap";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import headshot from '../../hero-assets/fernando-headhsot.jpg';
 
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -47,13 +48,21 @@ export default function AboutView() {
           
             {/* Circular Image */}
             <Col id="aboutImageContainer" lg={6} md={6} sm={12} xs={12}>
-              <div id="aboutHeroImage"></div>
+              <div id="aboutHeroImage">
+              </div>
             </Col>
 
             {/* Text Area */}
             <Col lg={6} md={6} sm={12} xs={12} className="aboutTextContainer">
-              <h1 id="aboutHeroName">Meet<br/>Fern<span/>ando</h1>
-              <p className="aboutText">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p>
+              <h1 id="aboutHeroName">Meet<br/>Fernando</h1>
+              <p className="aboutText">
+                Born and raised in the greater Los Angeles area, Fernando is a multi-passionate that can't fit in just one box.
+                <br/>
+                <br/>
+                He's a multi-instrumentalist, an automtive industry expert, a tech executive, an emeritus Financial Advisor, a graphic design, an amateur woodworker, and now -- a junior Web Developer.
+                <br/>
+                <br/>
+                Fernando hopes that he can help businesses upgrade their technology stacks to the modern era, as well as develop marketing and branding strategies that provoke real emotion for all stakeholders. Welcome to the site!</p>
             </Col>
         </Row>
 

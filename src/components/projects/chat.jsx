@@ -46,7 +46,7 @@ export default function ChatView() {
         </div>
         <div className="descriptionContainer">
               <div><h2 className="projectDescription-title">About Chat App React-Native</h2></div>
-              <div><p className="description">Since maybe like the Middle Ages, there have been many differing opinions on hustle and bustle. This cannot be denied. It is my intention to sit down and play video games for several hours. First, moving around quickly, and with purpose, is a true sign of character. Secondarily, bustle(e.g. hustle) yields more product for the working types. "Hustle and bustle are like my right and left arms," said Li'l Spicy in his famous "Hustle and Bustle Are Like My Right and Left Arms" speech. Webster's defines bustle as "excited and often noisy activity; a stir." A stir, indeed. Finally, sometimes gross stuff can be funny.</p></div>
+              <div><p className="description">Chat App (also Groupr) is a simple React-Native mobile app that allows users to Chat and update the colors/theme of the application. This app works on both iOS and Android devices using Google Firebase/Firestore and AWS hosting services.</p></div>
                 <Image src={imageTwo} className="projectImageTwo"/>
         </div>
         <div className="languagesContainer">

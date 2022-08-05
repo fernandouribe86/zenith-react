@@ -24,7 +24,7 @@ import PortfolioPieChart from "../pie-chart/pie-chart";
 
 export default function ContactView() {
     return (
-      <Container className="projectContainer">
+      <Container className="contactContainer">
         <Col>
           <Row className="navbarContact">
             <NavbarView />
@@ -36,8 +36,8 @@ export default function ContactView() {
           <h1 className="contactName">Contact</h1>
         </div>
         </div>
-        <div id="contactFormContainer">
-          <h2>Want to learn more? </h2>
+        <Row id="contactFormContainer">
+          <h3>Want to learn more? </h3>
           <p>Submit your contact information and a representative will reach out to you shortly!</p>
           <Form id="contactForm">
               
@@ -66,7 +66,7 @@ export default function ContactView() {
 
             {/* Comments */}
             <Form.Group className="mb-3" controlId="formBasicText">
-              <Form.Label class="formLabel">Notes/Questions</Form.Label>
+              <Form.Label class="formLabel">Notes & Questions</Form.Label>
               <textarea type="text" rows="4" cols="50" id="formLargeField" className="formBox"  placeholder="(Optional)" />
             </Form.Group>
 
@@ -79,8 +79,35 @@ export default function ContactView() {
               Submit
             </Button>
           </Form>
-        </div>
-       <FooterView />
+        </Row>
+        <Row id="footerMain">
+            <FooterView id="footerMain" style="width: 100px;"/>
+        </Row>
+        <Row id="footerSmall">
+        <div className="mainFooter-small">
+              <div className="footerSocial-small">
+                
+                <Button className="footerButton-small"  target="_blank" href="https://github.com/fernandouribe86">
+                  <img src={github} alt="GitHub logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">GitHub</p>
+                </Button>
+
+                <Button className="footerButton-small"  target="_blank" href="https://www.linkedin.com/in/fauribe/">
+                  <img src={linkedin} alt="LinkedIn logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">LinkedIn</p>
+                </Button>
+
+                <Button className="footerButton-small" target="_blank" href="https://www.twitter.com/fernandouribe">
+                  <img src={twitter} alt="Twitter logo" className="footerLogo-small"/>
+                  <p className="footerSocial-small">Twitter</p>
+                </Button>
+
+              </div>
+            </div>
+        </Row>
+        <Row id="mainCopyright">
+            <p className="copyright">© 2022, Fernando Uribe Consulting Company. All rights reserved.</p>
+        </Row>
       </Container>
     )
 }
