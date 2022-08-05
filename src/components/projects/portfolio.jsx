@@ -23,10 +23,10 @@ import PortfolioPieChart from "../pie-chart/pie-chart";
 export default function PortfolioView() {
 
   const data = [
-    { name: 'JavaScript', value: 609 },
-    { name: 'SCSS', value: 310 },
-    { name: 'HTML', value: 41 },
-    { name: 'CSS', value: 40 },
+    { name: 'JavaScript', value: 713 },
+    { name: 'SCSS', value: 247 },
+    { name: 'CSS', value: 22 },
+    { name: 'HTML', value: 18 },
   ];
 
 
