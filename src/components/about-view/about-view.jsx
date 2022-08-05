@@ -59,7 +59,7 @@ export default function AboutView() {
                 Born and raised in the greater Los Angeles area, Fernando is a multi-passionate that can't fit in just one box.
                 <br/>
                 <br/>
-                He's a multi-instrumentalist, an automtive industry expert, a tech executive, an emeritus Financial Advisor, a graphic design, an amateur woodworker, and now -- a junior Web Developer.
+                He's a multi-instrumentalist, an automtive industry expert, a tech executive, an emeritus Financial Advisor, a graphic designer, an amateur woodworker, and now -- a junior Web Developer.
                 <br/>
                 <br/>
                 Fernando hopes that he can help businesses upgrade their technology stacks to the modern era, as well as develop marketing and branding strategies that provoke real emotion for all stakeholders. Welcome to the site!</p>

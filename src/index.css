@@ -62,7 +62,7 @@ html, body{
 }
 
 @font-face {
-  font-family: 'druk-super-cy-gr-web';
+  font-family: 'druk-super-cy-gr-web'; 
   src: url(./hero-assets/DrukCond-Super-Cy-Gr-Web.ttf);
 }
 
@@ -81,3 +81,33 @@ html, body{
   src: url(./hero-assets/DrukWide-HeavyItalic-Cy-Gr-Web.ttf);
 }
 
+@media only screen and (min-width: 100px)  {
+  @font-face {
+    font-family: 'druk-wide-medium-regular';
+    src: url(./hero-assets/Druk-Wide-Medium-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'druk-super-cy-gr-web';
+    src: url(./hero-assets/DrukCond-Super-Cy-Gr-Web.ttf);
+  }
+  
+  @font-face {
+    font-family: 'druk-superitalic-web';
+    src: url(./hero-assets/DrukText-SuperItalic-Web.ttf);
+  }
+  
+  @font-face {
+    font-family: 'druk-wide-heavy';
+    src: url(./hero-assets/DrukWide-Heavy.ttf);
+  }
+  
+  @font-face {
+    font-family: 'druk-wide-heavy-italic';
+    src: url(./hero-assets/DrukWide-HeavyItalic-Cy-Gr-Web.ttf);
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Druk', 'Times New Roman', Times, serif;
+}
