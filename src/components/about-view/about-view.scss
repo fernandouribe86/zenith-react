@@ -84,14 +84,13 @@ min-width: 240px;
 }
 
 #aboutHeroName{
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 38px;
   // -webkit-text-stroke: 1.5px var(--zbackground);
 letter-spacing: .05em;
   text-align: center;
   vertical-align: bottom;
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  font-family: 'druk-wide-heavy', Arial, Helvetica, sans-serif;  
   text-transform: uppercase;
   color: var(--zred);
   margin-bottom: 25px;
@@ -149,7 +148,7 @@ letter-spacing: .05em;
   margin-top: 60px;
   margin-bottom: 15px;
   color: var(--zbackground);
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  font-family: 'druk-wide-heavy', Arial, Helvetica, sans-serif;  
   text-transform: uppercase;
   vertical-align: top;
 }
@@ -165,7 +164,7 @@ letter-spacing: .05em;
   margin-top: 60px;
   margin-bottom: 15px;
   color: var(--zlunar);
-  font-family: 'Druk', Arial, Helvetica, sans-serif;
+  font-family: 'druk-wide-heavy', Arial, Helvetica, sans-serif;  
   text-transform: uppercase;
   vertical-align: top;
 }
