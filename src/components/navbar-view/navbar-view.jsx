@@ -17,7 +17,7 @@ render(){
   return (
   <Col id="navbarContainer">
       <div id="navbar">
-        <div id="hero">
+        <Link id="hero" to="/">
               <img id ="heroLogo" src={logo} alt="Fernando Uribe Logo" />
           <div id="fernandoName">
             fernando a. uribe
@@ -25,7 +25,7 @@ render(){
           <div id="fernandoNameShort">
             f.a.u.
           </div>
-        </div>
+        </Link>
         {/* <Hamburger /> */}
       </div>
      </Col>

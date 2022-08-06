@@ -195,4 +195,14 @@
     font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
     font-size: 8px;
   }
+
+  .footerButton-small:hover, .footerButton-small:focus{
+    background-color: transparent;
+    color: var(--zred)
+  }
+
+  .footerButton-small:active{
+    background-color: transparent;
+    color: var(--zmaroon);
+  }
 }
