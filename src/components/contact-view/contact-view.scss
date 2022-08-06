@@ -144,3 +144,18 @@ border-radius: 7px;
     font-size: 22px;
   }
 }
+
+.socialLink-out{
+  color: var(--zlunar);
+  font-family: 'akzidenz-grotesk-light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.socialLink-out:hover, .socialLink-out:focus{
+  color: var(--zred);
+}
+
+.socialLink-out:active{
+  color: var(--zmaroon);
+}

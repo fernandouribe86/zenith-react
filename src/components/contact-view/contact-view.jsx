@@ -39,6 +39,11 @@ export default function ContactView() {
         <Row id="contactFormContainer">
           <h3>Want to learn more? </h3>
           <p>Submit your contact information and a representative will reach out to you shortly!</p>
+          <br/>
+          <br/>
+          <p>Feel free to reach out via:</p>
+          <p><a href="https://www.twitter.com/fernandouribe" className="socialLink-out">Twitter</a></p>
+          <p><a href="https://medium.com/@fauribe56" className="socialLink-out">Medium</a></p>
           <Form id="contactForm">
               
               {/* Name */}
